@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dealer Registeration Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!--==========================
+				NAVBAR
+	============================-->
+
+	<section id="navigation-bar">
+	<nav class="navbar navbar-default" style="background-color: #83ba03;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span> 
+			    </button>
+			    <div class="navbar-header">
+					<a class="navbar-brand" href="#">FARMER ASSISTANT</a>
+				</div>
+		     </div>
+			
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#home">Contact Us</a></li>
+					<li><a href="#home">About Us</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+	</section>
+
+	<!--==========================
+			REGISTRATION FORM
+	============================-->
+	
+	<section id="form">
+		<div class="container">
+		<div class="row">
+			<center><div id="h">Farmer Registration Form</div></center>
+			<div class="col-sm-8 col-sm-offset-2" style="background-color: #e6efef; padding-top: 2%;">
+				
+				<form action="../server-scripts/student-registration-onsubmit.php" method="POST">
+					<div class="form-group" style="padding-top:1%;">
+						<fieldset>
+			      			<legend>Personal Details:</legend>
+			      			<div class="col-sm-12">
+					      		<div class="row">
+					      			<div class="col-sm-6">
+							      		<div class="form-group">
+							    			<label for="fname">Firstname<p id="s" style="display:inline">*</p></label>
+							    			<div class="input-group">
+							    				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							      				<input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your firstname" required>
+							      			</div>
+							      		</div>
+							      	</div>
+
+							      	<div class="col-sm-6">
+							      		<div class="form-group">
+							    			<label for="lname">Lastname<p id="s" style="display:inline">*</p></label>
+							    			<div class="input-group">
+							    				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							    				<input type="text" class="form-control" id="lname" name="lname" placeholder="Enter your lastname" required>
+							      			</div>
+							      		</div>
+							      	</div>
+							    </div>
+
+							    <div class="row">
+					      			<div class="col-sm-6">
+							      		<div class="form-group">
+							    			<label for="mobile">Mobile No<p id="s" style="display:inline">*</p></label>
+							    			<div class="input-group">
+							    				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							      				<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+							      			</div>
+							      		</div>
+							      	</div>
+
+							      	<div class="col-sm-6">
+							      		<div class="form-group">
+							    			<label for="aadhar">Aadhar No<p id="s" style="display:inline">*</p></label>
+							    			<div class="input-group">
+							    				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							    				<input type="text" class="form-control" id="aadhar" name="aadhar" placeholder="Enter your aadhar number" required>
+							      			</div>
+							      		</div>
+							      	</div>
+							    </div>
+
+				      			<div class="form-group">
+				    				<label for="address">Address<p id="s" style="display:inline">*</p></label>
+				    			
+
+				    			<div class="row">
+					    			<div class="col-xs-3">
+					    				<input type="text" class="form-control" name="flat_no" id="b_no" placeholder="Flat No.">
+					    			</div>
+					    			<div class="col-xs-9">		
+					    					<input type="text" class="form-control" name="building_name" id="b_name" placeholder="Building Name">
+					    			</div>
+
+					    			<div class="col-xs-3" style="padding-top: 2%;">
+					    				<input type="text" class="form-control" name="street_no" id="s_no" placeholder="Street No.">
+					    			</div>
+
+					    			<div class="col-xs-9" style="padding-top: 2%;">
+					    				<input type="text" class="form-control" id="s_name" name="street_name" placeholder="Street Name">
+					    			</div>
+					    
+					    			<div class="col-xs-3" style="padding-top: 2%;">
+					    				<input type="text" class="form-control" name="city" id="city" placeholder="City">
+					    			</div>
+
+					    			<div class="col-xs-4" style="padding-top: 2%;">
+					    				<input type="text" class="form-control" name="p_code" id="p_code" placeholder="Pincode">
+					    			</div>
+
+					    			<div class="col-xs-5" style="padding-top: 2%;">
+					    				<input type="text" class="form-control" name="state" id="state" placeholder="State">
+					    			</div>
+				      			</div>
+					      	</div>
+			      		</fieldset>
+			      	</div>
+
+			      	<div class="form-group">
+			      		<fieldset>
+			      			<legend>Email and Password</legend>
+			      			<div class="col-sm-12">
+					      		<div class="form-group">
+					    			<label for="email">Email<p id="s" style="display:inline">*</p></label>
+					    			<div class="input-group">
+					    				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					      				<input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required>
+					      			</div>
+					      		</div>
+
+						      	<div class="row">
+					      			<div class="col-sm-6">
+							      		<div class="form-group">
+							    			<label for="password">Password<p id="s" style="display:inline">*</p></label>
+							    			<div class="input-group">
+					    						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+					      						<input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" required>
+					      					</div>
+							      			
+							      		</div>
+							      	</div>
+
+							      	<div class="col-sm-6">
+										<div class="form-group">
+							    			<label for="cpassword">Confirm Password<p id="s" style="display:inline">*</p></label>
+							      			<div class="input-group">
+					    						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+					      						<input type="password" class="form-control" id="cpassword" placeholder="Confirm your password" required>
+					      					</div>
+
+							      		</div>
+							      	</div>
+						      	</div>
+						    </div>
+			      		</fieldset> 
+			      		<fieldset>
+			      		<legend></legend>
+			      		<div class="col-xs-offset-2 col-xs-4">
+							<div class="form group">
+								<input type="reset" class="btn btn-reset" value="Reset" id="reset" style="width: 90%; background-color: #8bb6ba; color: black;">  
+		                    </div>
+		                </div>
+		                <div class="col-xs-4">
+							<div class="form group">
+		                        <input type="submit" class="btn btn-submit" value="Submit" id="submit" style="width: 90%; background-color: #88b73c; color: white;">
+		                    </div>
+		                </div>
+		                </fieldset>
+		                <hr>
+			      	</div>
+		      	</form>
+			</div>
+			</fieldset>
+		</div>
+	</div>
+	</section>
+
+	<!--==========================
+				FOOTER
+	============================-->
+
+
+</body>
+</html>
