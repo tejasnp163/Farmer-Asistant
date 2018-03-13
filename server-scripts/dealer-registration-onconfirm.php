@@ -66,7 +66,7 @@
 
 		$mail->Subject = 'You have Successfully registered on Farmer Assistant!';
 	
-		$mail->Body    = "Congratulations" . $fname . " " . $lname . "!!! You have been registered on Farmer Assistant!!! \n Your Farmer Id is FA" . $f_id;
+		$mail->Body    = "Congratulations" . $fname . " " . $lname . "!!! You have been registered on Farmer Assistant!!! \n Your Farmer Id is DE" . $f_id;
 		
 		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
